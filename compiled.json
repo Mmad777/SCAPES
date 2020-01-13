@@ -1,0 +1,302 @@
+{
+    "Instructions": [
+        {
+            "Address": 0,
+            "Opcode": "DeclareIntegerVariable",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "i",
+                    "Type": "Integer"
+                }
+            }
+        },
+        {
+            "Address": 1,
+            "Opcode": "DeclareIntegerVariable",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "repeat",
+                    "Type": "Integer"
+                }
+            }
+        },
+        {
+            "Address": 2,
+            "Opcode": "DeclareIntegerVariable",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "j",
+                    "Type": "Integer"
+                }
+            }
+        },
+        {
+            "Address": 3,
+            "Opcode": "DeclareIntegerVariable",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "repeat2",
+                    "Type": "Integer"
+                }
+            }
+        },
+        {
+            "Address": 4,
+            "Opcode": "DeclareIntegerVariable",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "total",
+                    "Type": "Integer"
+                }
+            }
+        },
+        {
+            "Address": 5,
+            "Opcode": "MoveVariable",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "i",
+                    "Type": "Integer"
+                }
+            },
+            "Operand2": {
+                "Type": "ConstantInteger",
+                "Value": 1
+            }
+        },
+        {
+            "Address": 6,
+            "Opcode": "ReadInteger",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "repeat",
+                    "Type": "Integer"
+                }
+            }
+        },
+        {
+            "Address": 7,
+            "Opcode": "MoveVariable",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "total",
+                    "Type": "Integer"
+                }
+            },
+            "Operand2": {
+                "Type": "ConstantInteger",
+                "Value": 0
+            }
+        },
+        {
+            "Address": 8,
+            "Opcode": "CompareValues",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "i",
+                    "Type": "Integer"
+                }
+            },
+            "Operand2": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "repeat",
+                    "Type": "Integer"
+                }
+            }
+        },
+        {
+            "Address": 9,
+            "Opcode": "JumpIfMore",
+            "Operand1": {
+                "Address": {
+                    "Location": 20
+                },
+                "Type": "Address"
+            }
+        },
+        {
+            "Address": 10,
+            "Opcode": "MoveVariable",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "j",
+                    "Type": "Integer"
+                }
+            },
+            "Operand2": {
+                "Type": "ConstantInteger",
+                "Value": 1
+            }
+        },
+        {
+            "Address": 11,
+            "Opcode": "MoveVariable",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "repeat2",
+                    "Type": "Integer"
+                }
+            },
+            "Operand2": {
+                "Type": "ConstantInteger",
+                "Value": 10
+            }
+        },
+        {
+            "Address": 12,
+            "Opcode": "CompareValues",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "j",
+                    "Type": "Integer"
+                }
+            },
+            "Operand2": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "repeat2",
+                    "Type": "Integer"
+                }
+            }
+        },
+        {
+            "Address": 13,
+            "Opcode": "JumpIfMore",
+            "Operand1": {
+                "Address": {
+                    "Location": 17
+                },
+                "Type": "Address"
+            }
+        },
+        {
+            "Address": 14,
+            "Opcode": "AddValues",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "total",
+                    "Type": "Integer"
+                }
+            },
+            "Operand2": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "j",
+                    "Type": "Integer"
+                }
+            }
+        },
+        {
+            "Address": 15,
+            "Opcode": "AddValues",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "j",
+                    "Type": "Integer"
+                }
+            },
+            "Operand2": {
+                "Type": "ConstantInteger",
+                "Value": 1
+            }
+        },
+        {
+            "Address": 16,
+            "Opcode": "JumpUnconditionally",
+            "Operand1": {
+                "Address": {
+                    "Location": 12
+                },
+                "Type": "Address"
+            }
+        },
+        {
+            "Address": 17,
+            "Opcode": "PrintValue",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "i",
+                    "Type": "Integer"
+                }
+            }
+        },
+        {
+            "Address": 18,
+            "Opcode": "AddValues",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "i",
+                    "Type": "Integer"
+                }
+            },
+            "Operand2": {
+                "Type": "ConstantInteger",
+                "Value": 1
+            }
+        },
+        {
+            "Address": 19,
+            "Opcode": "JumpUnconditionally",
+            "Operand1": {
+                "Address": {
+                    "Location": 8
+                },
+                "Type": "Address"
+            }
+        },
+        {
+            "Address": 20,
+            "Opcode": "PrintValue",
+            "Operand1": {
+                "Type": "Variable",
+                "Variable": {
+                    "Name": "total",
+                    "Type": "Integer"
+                }
+            }
+        },
+        {
+            "Address": 21,
+            "Opcode": "EndOfProgram"
+        }
+    ],
+    "Variables": [
+        {
+            "Name": "repeat",
+            "Type": "Integer"
+        },
+        {
+            "Name": "total",
+            "Type": "Integer"
+        },
+        {
+            "Name": "i",
+            "Type": "Integer"
+        },
+        {
+            "Name": "j",
+            "Type": "Integer"
+        },
+        {
+            "Name": "repeat2",
+            "Type": "Integer"
+        }
+    ]
+}
